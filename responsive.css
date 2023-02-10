@@ -1,0 +1,316 @@
+/* Media Queries for website responsiveness */
+/* ------------------------------------------------------------------
+ * File         : style.css
+ * Author       : Edison Ovicial
+ * Author URI   : http://www.eddy360.com
+ *
+ * EDDY360 Copyright 2020 All Rights Reserved.
+ * ------------------------------------------------------------------
+[Table of contents]
+    1. global
+    2. header
+    3. navigation
+    4. slideshow
+    5. footer
+    6. components
+    7. utility
+    8. vendors
+    9. custom
+------------------------------------------------------------------ */
+@media (min-width: 640px) and (max-width: 960px){
+    header{border: 2px solid green;}
+}
+@media (min-width: 302px)  and (max-width: 415px){
+    *{box-sizing: border-box;}
+
+    header{
+        border: 1px solid red;
+        width: 162%;
+        overflow: hidden;
+    }
+    .Snav{
+        border: 1px solid red;
+        display: flex;
+    }
+    /* .Snav>div{width: 0%;} */
+    .brand{
+        display: flex;
+        align-items: center;
+        width: 15%;
+        justify-content: space-between;
+    }
+    .brand img{width: 100%; height: 80%;}
+    .socialicons{width: 45%;}
+    .sIcons{
+        display: flex; 
+        justify-content: space-between; 
+        width: 100%; 
+        align-items: center;
+    }
+    .fa-headphones{font-size: 25px; padding: none;}
+    .fa-user{font-size: 25px; padding: none;}
+    .fa-cart-shopping{font-size: 25px; padding-right: 12px;}
+    .fa-bars{font-size: 25px;}
+    .socialNums{display: none;}
+    
+    .inputDetails{display: none;}
+    .menu{display: none;}
+    .Tnav{background-color: white;}
+    .Tnav_inputDetails{
+        display: block;
+        width: 100%; 
+        border: 1px solid #666666; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+    .wishlist{display: none;}
+    .Fnav{display: none;}
+    
+    /* .Tnav{display: none;} */
+    .slider_section{
+        border: 1px solid red;
+        width: 162%;
+        height: 160px;
+    }
+    .sliderText{
+        position: absolute;
+        left: 60%;
+        top: 18%;
+        width: 59%;
+    }
+    .brandP{
+        color: #313C46; margin: 5px 0px; font-size: 20px;display: none;
+    }
+    .brandH{
+        color: #313C46; font-size: 22px;
+    }
+    .sliderP{padding: 10px; background-color: #F04706; width: 55%; color: white; font-size: 12px; text-align: center;}
+    .sliderBTN{
+        padding: 10px; 
+        background-color: #313C46; 
+        color: white; 
+        border: none;
+        width: 40%;
+        height: 50px;
+        border-radius: 4px;
+        margin-top: 8px;
+    }
+    .Pspan{display: none;}
+    .hidden{display: none;}
+    .customerCare{
+        width: 162%;
+        display: flex;
+        padding: 0px 20px;
+        height: 150px;
+        margin: 15px 0px;
+    }
+    .freeDelivery{width: 100%; border: 1px solid red;}
+    .freeDelivery{
+        align-items: center;
+        padding: 0px 60px;
+    }
+    .customerCare>div{width: 100%; border: 1px solid rgb(201, 197, 197); }
+    .f2, .f3{display: none;}
+    .popularItems{width: 162%;}
+    .popularItems>div{ width: 100%; border-radius: 5px;}
+    .popularItems img{
+    border-radius: 5px;
+}
+    .f1{width: 100%;}
+    .offer{width: 162%;}
+    .offerP{display: none;}
+
+    .goods_section{
+        margin-top: 30px;
+        height: 280px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 140px 140px;
+        overflow: hidden;
+        padding: 0px 20px;
+        width: 162%;
+    }
+    .deals{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        width: 162%;
+        height: 1700px;
+        border: 1px solid red;
+    }
+    .dealsCont{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        /* padding: 0px 20px; */
+    }
+    .deals_title{
+        margin: 30px 0px 10px 0px; 
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .Fdeal{
+        height: 610px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+        background-color: white;
+    }
+
+    .Sdeal{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 400px 400px;
+        height: 800px;
+        width: 100%;
+        border: 2px solid green;
+        overflow: hidden;
+        background-color: white;
+    }
+    .Sdeal>div{
+        border: 1px solid rgb(194, 194, 194);
+    }
+    .Sdeal_imgCover{
+        width: 100%;
+        height: 250px;
+        padding: 20px;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .SdealCover{
+        margin: 10px 0px;
+        line-height: 25px;
+        color: grey;
+        font-size: 13px;
+    }
+    .SdealCover a{line-height: 18px;}
+
+
+    .advert{
+        width: 162%;
+        margin-top: 30px;
+        padding: 0px 20px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .advert>div{width: 100%;}
+    .ads1{
+        position: relative;
+    }
+    .advertText1{
+        position: absolute;
+        top: 22%;
+        left: 8%;
+    }
+    .ads1P{
+        text-align: center;
+        padding: 7px; 
+        background: white; 
+        width: 80%; 
+        color: black; 
+        font-size: 13px; 
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    .ads2{
+        position: relative;
+        display: none;
+    }
+    .ads2P{
+        text-align: center;
+        padding: 7px; 
+        background: #FFCC00; 
+        width: 80%; 
+        color: black; 
+        font-size: 13px; 
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    .advertText2{
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    
+/* Designing best sellers container from here */
+.bestSellers{
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    width: 162%;
+    border: 1px solid red;
+}
+.bestSellers_title{margin: 25px 0px 10px 0px; padding: 0px 20px;}
+.bestSellers_cont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 210px 210px;
+    padding: 0px 20px;
+    height: 500px;
+}
+/* .bestSellers>div{border: 1px solid red;} */
+.bestSeller_items{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Designing the footer from here */
+footer{
+    
+    height: 200px;
+    margin-top: 35px;
+    width: 162%;
+}
+footer>div{
+    border: 1px solid white;
+}
+.footerDetails{
+    height: 220px;
+    display: flex;
+    background-color: #222121;
+    
+}
+.footerDetails>div{
+    border-right: 1px solid grey;
+    height: 100%;
+    width: 40%;
+}
+.emailDetails{display: flex; flex-direction: column; padding: 30px;}
+.sch{
+    border: 1px solid grey;
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 4px;
+    background-color: white;
+    justify-content: space-around;
+}
+.sch input{outline: none; border: none; width: 50%;}
+.footerBTN{
+    background: #FFCC00;
+    border: none;
+    width: 50%;
+    height: 100%;
+    border-radius: 4px;
+}
+.emailDetails p{
+    color: white
+}
+.Dev{
+    height: 50px;
+    background-color: black;
+}
+    
+}
